@@ -7,7 +7,7 @@
 for i in {0..1673}; 
 do 
     echo $i;  
-    cat  nzetc.csv | rev | sort | rev | head --lines $i > nzetc-urls.csv; 
+    cat  nzetc.csv | rev | sort | rev | head --lines $i >; 
     (( j = 1673 - $i )) ;
     echo $j ; 
     date -d "$j days ago"; 
